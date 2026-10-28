@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 22px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+a {
+  display: block;
+  margin-top: 15px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilização da lista de clientes */
+
+body {
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  padding: 30px;
+}
+
+h1 {
+  color: #1d4ed8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+}
+
+td a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+td a[href*="editar"] {
+  color: #2563eb;
+}
+
+td a[href*="excluir"] {
+  color: #dc2626;
+}
+
+a {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Botões de editar e excluir na tabela */
+td a[href*="editar"],
+td a[href*="excluir"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  margin: 4px 4px 4px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Botão Editar */
+td a[href*="editar"] {
+  background-color: #dbeafe;
+  color: #0c0078;
+  border: 1px solid #0042dc;
+}
+
+td a[href*="editar"]:hover {
+  background-color: #0042dc;
+  transform: translateY(-1px);
+}
+
+/* Botão Excluir */
+td a[href*="excluir"] {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #ff2a2a;
+}
+
+td a[href*="excluir"]:hover {
+  background-color: #ff2a2a;
+  transform: translateY(-1px);
+}

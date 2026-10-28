@@ -1,0 +1,12 @@
+# Arquivos de configuração local
+config/local.php
+ 
+# Sistema operacional
+.DS_Store
+Thumbs.db
+ 
+# Editor
+.vscode/
+ 
+# Testes temporários
+teste_conexao.php
